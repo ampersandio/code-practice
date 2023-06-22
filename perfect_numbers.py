@@ -12,12 +12,10 @@ Perfect Number Example
 
 '''
 
-
 from math import sqrt, ceil
 
-
 '''
-What's important here is that you can find the divisors of an integer by only traversing to the sqrt of this number!!! 
+You can find the divisors of an integer by only traversing to the sqrt of this number!!! 
 '''
 
 def find_divisors(n):
@@ -38,4 +36,4 @@ while len(perfect_numbers) < 4:
 
     count += 1
 
-print(perfect_numbers)
+print(*perfect_numbers)
