@@ -16,7 +16,23 @@ def binary_search(arr, target):
 
     return "Not Found"
 
-lst = [1, 3, 5, 7, 9, 11, 13]
+
+def binary_search2(lst, n):
+    length = len(lst)
+    index = length // 2
+
+    while index >= 0:
+        if lst[index] == n:
+            return index
+        
+        elif lst[index] > n:
+            index = (index - 1) // 2
+        else:
+            index = (index + 1 + length) // 2
+
+
+
+lst = [1, 3, 4, 4.5, 5, 11, 13]
 print(binary_search(lst, 5))
 
 
